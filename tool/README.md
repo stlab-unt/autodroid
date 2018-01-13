@@ -16,9 +16,10 @@ Autodroid has been tested on Ubuntu 16.04 and Android 5.0 emulators.
 git clone https://github.com/stlab-unt/autodroid
 ```
 - Install appium by executing the "install_appium.sh" script.
+- Define the ANDROID_HOME and JAVA_HOME environment variables. ANDROID_HOME should be the path to the Android SDK on your machine and JAVA_HOME should be the path to your installation of JDK.
 
 ## Configuration
-The Autodroid configuration file is located in the "configuration" folder. 
+The Autodroid configuration file is located in the "config" folder. The "configuration.json" file specifies the path to the AUT (Android APK). It is important to ensure that the ANDROID_HOME configuration parameter specifies the correct path to the Android SDK installed on your computer.
 
 ## Test Generation
 Execute the "start_appium.sh" script. Then, launch an Android emulator (e.g. genymotion) with Android 4.4 or above.
