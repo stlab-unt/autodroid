@@ -1,0 +1,37 @@
+{
+	"AUT": {
+		"aut_dir": "/home/davidadamojr/git/rdmtester/apps",
+		"aut_app": "repay-debug.apk",
+		"aut_package": "com.repay.android"
+	},
+	"APPIUM": {
+		"appium_url" : "http://127.0.0.1:4723/wd/hub"
+	},
+	"ENV": {
+		"ANDROID_HOME": "/home/davidadamojr/Android/Sdk",
+		"JAVA_HOME": "/usr/lib/jvm/java-8-oracle",
+		"ADB_PATH": "/home/davidadamojr/Android/Sdk/platform-tools"
+	},
+	"GENERATOR": {
+		"actions": ["clickable", "long-clickable", "checkable", "scrollable"],		        
+	    "event_delay": 2000,
+	    "output_dir": "testsuites",
+        "use_old_style_menu": false,
+        "home_btn_prob": 0.05
+	},
+    "TEXT_ENTRY": {
+        "misc": ["",
+		    "Fish",
+		    "A fish is any member of a paraphyletic group of organisms that consist of all gill-bearing aquatic craniate animals that lack limbs with digits. Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish, as well as various extinct related groups.",
+		    "24",
+		    "   400   ",
+		    "Micro872scope254",
+		    "@#$%^!&*()",
+		    "<html><head><title>Hello world</title></head><script type='text/javascript'>alert('pwnd');</script></html>"
+        ]
+    },
+    "GENERAL": {
+    	"coverage_enabled": "true",
+    	"get_logs": "true"
+    }
+}
