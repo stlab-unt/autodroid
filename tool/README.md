@@ -29,11 +29,11 @@ Autodroid uses an event extraction cycle to incrementally construct and execute 
 ```
 java -jar autodroid-v1.jar generate --algo random --time 1
 ```
-- **Frequency-based test generation:** maintains a history of how many times each GUI event has been previously executed and always selects/executes an available event that has been previously executed the least number of times. Use the following command to generate a frequency-based test suites for 1 hour: 
+- **Frequency-based test generation:** maintains a history of how many times each GUI event has been previously executed and always selects/executes an available event that has been previously executed the least number of times. Use the following command to generate a frequency-based test suite for 1 hour: 
 ```
 java -jar autodroid-v1.jar generate --algo frequency --time 1
 ```
-- **Combinatorial-based test generation:** generates test suites by selecting events that maximize coverage of n-way event combinations where n is a specified event combination strengths. Use the following command to generate combinatorial-based test suites of strength 2 for 1 hour: 
+- **Combinatorial-based test generation:** generates test suites by selecting events that maximize coverage of n-way event combinations where n is a specified event combination strengths. Use the following command to generate a combinatorial-based test suite of strength 2 for 1 hour: 
 ```
 java -jar autodroid-v1.jar generate --algo combinatorial --strength 2 --time 1
 ```
